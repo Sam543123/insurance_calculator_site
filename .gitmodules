@@ -1,0 +1,6 @@
+[submodule "insurance_calculator_backend"]
+	path = insurance_calculator_backend
+	url = D:/work/train_repositories/my_projects/insurance_calculator_site/insurance_calculator_backend.git
+[submodule "insurance_calculator_frontend"]
+	path = insurance_calculator_frontend
+	url = D:/work/train_repositories/my_projects/insurance_calculator_site/insurance_calculator_frontend.git
