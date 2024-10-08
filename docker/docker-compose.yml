@@ -1,0 +1,20 @@
+services:  
+  backend:
+    build:
+      context: ../insurance_calculator_backend
+      dockerfile: docker/Dockerfile  
+    ports:
+      - "8000:8000"
+    volumes:     
+      - "db_data:/app/insurance_calculator_project/db/"   
+  frontend:
+    build:
+      context: ../insurance_calculator_frontend
+      dockerfile: docker/Dockerfile  
+    ports:
+      - "3000:3000"   
+    depends_on:
+      - backend
+
+volumes:  
+  db_data:
